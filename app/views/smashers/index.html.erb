@@ -1,0 +1,23 @@
+<h1>Smashers</h1>
+<div class="row">
+    <div class="col-xs-12 well well-lg">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>Tag</td>
+                    <td>Wins</td>
+                    <td>Losses</td>
+                </tr>
+            </thead>
+            <tbody>
+                <% @smashers.each do |smasher| %>
+                    <tr>
+                        <td><%= link_to smasher.tag, smasher_path(smasher.id) %></td>
+                        <td><%= smasher.wins.count %></td>
+                        <td><%= smasher.losses.count %></td>
+                    </tr>
+                <% end %>
+            </tbody>
+        </table>
+    </div>        
+</div>

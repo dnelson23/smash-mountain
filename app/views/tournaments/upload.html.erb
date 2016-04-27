@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-md-12 well well-lg">
+        <%= form_tag({controller: "tournaments", action: "new"}, method: "get", class: "form-horizontal") do |f| %>
+            <div class="row">
+                <div class="col-xs-9">
+                    <div class="form-group">
+                        <label for "tournament_sub" class="control-label col-xs-3">Tournament Subdomain</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="tournament_sub" class="form-control" name="tournament_sub" 
+                                placeholder="Subdomain" />
+                        </div>
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label for "tournament-name" class="control-label col-xs-3">Tournament Name</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="tournament-name" class="form-control" name="tournament-url" 
+                                placeholder="TBH6" />
+                        </div>
+                    </div> -->
+
+                    <div class="form-group">
+                        <label for "tournament_name" class="control-label col-xs-3">Tournament Name</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="tournament_name" class="form-control" name="tournament_name" 
+                                placeholder="Name" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <%= submit_tag 'Load Tournament', :class => 'btn btn-primary btn-lg outline' %>
+                </div>
+            </div>
+        <% end %>
+        <div id="fox-waveshine" class="text-center hidden">
+            <h3>Loading Player Data...</h3>
+            <%= image_tag "fox_waveshine.gif" %>
+        </div>
+        <form id="tournament-data">
+            <p><%= @participant %></p>
+        </form>
+    </div>
+</div>
