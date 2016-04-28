@@ -5,7 +5,7 @@
 ----------
 
 
-**NOTE**: I'm currently in the process of converting this application from Ruby on Rails to PHP with [Laravel](https://laravel.com/), so I have had to stop further development and take the Beta version offline for the time being.
+**NOTE**: I'm currently in the process of converting this application from Ruby on Rails to Javascript with [Meteor](https://www.meteor.com/), so I have had to stop further development and take the Beta version offline for the time being.
 
 The main purpose of this tool is to give local community organizers of Super Smash Bros. Melee a history of tournaments and matches between their players. It becomes very difficult to keep track of progress of players over very long running weekly or biweekly tournament series, some of these tournaments run consistently for years. It uses a public API from [Challonge](http://challonge.com), a widely used bracket building app, to pull and parse player and match data.
 
